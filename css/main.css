@@ -1,0 +1,979 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.layout {
+    background-color: black;
+    background-image: linear-gradient(to right, black 70%, rgb(223, 75, 228));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 15px 40px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+
+}
+
+.layout .cards {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+}
+
+.layout .cards .websites {
+    width: 15%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 125px;
+    align-items: center;
+    /* background-color: black; */
+}
+
+.layout .cards .websites a i {
+
+    color: white;
+    font-size: larger;
+    /* padding: 0px 8px; */
+    transition: 0.5s;
+
+}
+
+.layout .cards .websites a i:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    font-size: 25px;
+}
+
+.layout .cards .tools {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 85px;
+    margin-left: 20px;
+
+}
+
+.layout .cards .tools ul {
+    list-style-type: none;
+}
+
+.layout .cards .tools ul li {
+    color: white;
+    float: right;
+    padding: 0px 10px;
+    outline-color: initial;
+    border-color: initial;
+    font-size: medium;
+    font-weight: lighter;
+    outline: none;
+    border: none;
+    transition: 0.9s;
+}
+
+.layout .cards .tools ul li:hover {
+    cursor: pointer;
+    /* font-family: "Raleway", sans-serif; */
+    font-size: larger;
+}
+
+/* .layout .toggler{
+    display: none;
+} */
+.layout .logo {
+    width: 30%;
+}
+
+.layout .logo img {
+    width: 50%;
+}
+
+.container {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../img/boys.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+/* .container .back-ground {
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../img/boys.jpg);
+} */
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .alpha {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container .alpha .start {
+    width: 70%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+.container .alpha .start h1 {
+
+    color: white;
+    text-shadow: rgb(31, 0, 173) 2px 2px 20px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+}
+
+.container .alpha .start a {
+    color: white;
+    border: 2px solid rgb(63, 62, 62);
+    border-radius: 50px;
+    margin-top: 30px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    transition: 0.8s;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 11px 36px;
+
+
+}
+
+
+.container .alpha .start a:hover {
+    cursor: pointer;
+    background-color: rgb(59, 7, 52);
+}
+
+.info {
+
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+
+}
+
+.info .words {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.info .words h2 {
+
+    color: white;
+    /* text-align: center; */
+    position: relative;
+    margin-left: 98px;
+    width: 200px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.info .words h2::before {
+
+    content: "";
+    position: absolute;
+    width: 67%;
+    height: 2px;
+    background-color: rgb(2, 39, 14);
+    top: 50%;
+    right: 0;
+}
+
+.info .words h3 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 98px;
+
+}
+
+.info .threedos {
+
+    width: 100%;
+    height: 650px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-left: 15px;
+
+}
+
+.info .threedos .logo {
+    width: 40%;
+    display: flex;
+    text-align: center;
+}
+
+.info .threedos .logo img {
+    width: 80%;
+    height: 450px;
+
+}
+
+.info .threedos .about {
+    width: 40%;
+    height: 650px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.info .threedos .about h4 {
+
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.info .threedos .about h5 {
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.info .threedos .about ol {
+    list-style-type: none;
+}
+
+.info .threedos .about ol li {
+
+    color: white;
+    font-weight: bolder;
+    text-align: left;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(43, 42, 42);
+    background-attachment: fixed;
+
+}
+
+.contact .upper {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.contact .upper .address {
+    width: 30%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.contact .upper .address h6 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.contact .upper .address p {
+    color: white;
+}
+
+.contact .upper .address p strong {
+    color: white;
+}
+
+.contact .upper .address h7 {
+
+    color: white;
+    font-size: 17px;
+
+}
+
+.contact .upper .address h7 strong {
+
+    color: white;
+    font-size: 17px;
+
+}
+
+.contact .upper .address h7 a {
+    color: rgb(2, 65, 44);
+    font-size: 17px;
+
+}
+
+.contact .upper .links {
+    width: 30%;
+    padding-top: 15px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact .upper .links strong {
+    color: white;
+
+}
+
+.contact .upper .links .icons {
+    width: 40%;
+    height: 60px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* align-items: center; */
+    margin: 10px auto;
+}
+
+.contact .upper .links .icons a {
+    background-color: rgb(245, 83, 245);
+    color: white;
+    background-image: initial;
+    font-size: 18px;
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+.contact .upper .links .icons a i {
+    margin: 11px;
+}
+
+.contact .upper .links .icons a:hover {
+    cursor: pointer;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.contact .upper .sponsers {
+    width: 30%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .upper .sponsers h8 {
+    color: white;
+    font-size: 18px;
+}
+
+.contact .upper .sponsers .amit {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .upper .sponsers .amit img {
+
+    width: 30%;
+
+}
+
+.contact .upper .sponsers .amit a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+
+.contact .upper .sponsers .ebda3 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .upper .sponsers .ebda3 img {
+
+    width: 30%;
+}
+
+.contact .upper .sponsers .ebda3 a {
+    color: white;
+    text-decoration: none;
+    margin-right: 75px;
+
+}
+
+.contact .copy-right {
+
+    width: 100%;
+    padding-left: 35px;
+    padding-bottom: 25px;
+
+}
+
+.contact .copy-right h7 {
+
+    color: white;
+    font-size: 17px;
+
+}
+
+.contact .copy-right h7 strong {
+
+    color: white;
+    font-size: 17px;
+
+}
+
+.contact .copy-right h7 a {
+    color: rgb(120, 240, 200);
+    font-size: 17px;
+    text-decoration: none;
+
+}
+
+.contact .copy-right a:hover {
+    cursor: pointer;
+}
+
+/* =============================================================================================== */
+/* Media Query */
+/* =============================================================================================== */
+
+
+/* Max-Width = 1200  */
+@media (max-width : 1200px) {
+
+
+
+    .layout .cards .websites {
+
+        padding-right: 75px;
+
+    }
+
+
+
+    .layout .cards .tools {
+        padding-left: 60px;
+        margin-left: 15px;
+
+    }
+
+    .layout .cards .tools ul {
+        list-style-type: none;
+    }
+
+
+
+    .info .threedos .logo {
+        width: 45%;
+
+    }
+
+    .info .threedos .logo img {
+        width: 90%;
+
+    }
+
+    .contact .upper .links .icons {
+        width: 55%;
+
+    }
+
+    .contact .upper .links .icons a {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .contact .upper .links .icons a i {
+        margin: 11px;
+    }
+
+    .contact .upper .links .icons a:hover {
+        width: 47px;
+        height: 47px;
+    }
+
+}
+
+/* ============================================================================ */
+/* Max-Width = 980  */
+@media (max-width : 980px) {
+
+    .layout .cards {
+        display: none;
+    }
+
+    .layout .logo {
+        width: 40%;
+    }
+
+    .layout .logo img {
+        width: 60%;
+    }
+
+    .layout .toggler {
+        width: 20%;
+        align-items: center;
+
+    }
+
+    .layout .toggler i {
+        color: white;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .info .threedos {
+        justify-content: space-between;
+    }
+
+    .info {
+        height: 900px;
+    }
+
+    .info .threedos .logo {
+        width: 90%;
+        height: 395px;
+        margin-bottom: 55px;
+    }
+
+    .info .threedos .logo img {
+        width: 60%;
+        height: 425px;
+        margin: auto;
+
+    }
+
+    .info .threedos .about {
+        width: 80%;
+        height: 250px;
+        margin: auto;
+    }
+
+    .contact {
+        height: 450px;
+    }
+
+    .contact .upper {
+        justify-content: space-between;
+        margin-bottom: 65px;
+    }
+
+    .contact .upper .address {
+        width: 40%;
+        height: 37%;
+        margin-bottom: 55px;
+    }
+
+    .contact .upper .links {
+        width: 40%;
+        height: 37%;
+        margin-bottom: 55px;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .contact .upper .links .icons {
+        margin-top: 20px;
+        margin: 0px auto;
+    }
+
+    .contact .upper .sponsers {
+        width: 40%;
+        height: 37%;
+    }
+
+    .contact .copy-right {
+        height: 20%;
+    }
+}
+
+/* ==================================================================== */
+/* Max-Width = 750 */
+@media (max-width : 750px) {
+
+
+
+    .layout .logo {
+        width: 50%;
+    }
+
+    .layout .logo img {
+        width: 70%;
+    }
+
+    .container .alpha .start {
+        align-items: center;
+    }
+
+    .container .alpha .start a {
+
+        margin-top: 225px;
+        margin: 0px auto;
+    }
+
+    .info {
+        height: 900px;
+    }
+
+    .info .threedos .logo {
+        width: 100%;
+        height: 370px;
+        margin-bottom: 35px;
+    }
+
+    .info .threedos .logo img {
+        width: 65%;
+        height: 355px;
+        margin: auto;
+
+    }
+
+    .info .threedos .about {
+        width: 80%;
+        height: 300px;
+        margin: auto;
+    }
+
+    .contact {
+        height: 650px;
+
+        margin: auto;
+    }
+
+    .contact .upper {
+        justify-content: space-around;
+        margin-bottom: 265px;
+        width: 90%;
+    }
+
+    .contact .upper .address {
+        width: 70%;
+        height: 65%;
+        margin-bottom: 15px;
+        margin-left: 130px;
+    }
+
+    .contact .upper .links {
+        width: 70%;
+        height: 40%;
+        margin-bottom: 30px;
+
+
+    }
+
+    .contact .upper .links .icons {
+        margin-top: 20px;
+        margin: 0px auto;
+    }
+
+    .contact .upper .links .icons a {
+        width: 39px;
+        height: 39px;
+
+    }
+
+    .contact .upper .links .icons a i {
+        margin: 10px;
+    }
+
+    .contact .upper .links .icons a:hover {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .contact .upper .sponsers {
+        width: 70%;
+        height: 23%;
+    }
+
+    .contact .upper .sponsers h8 {
+        margin-bottom: 20px;
+    }
+
+    .contact .upper .sponsers .amit img {
+
+        width: 20%;
+
+    }
+
+    .contact .upper .sponsers .amit a {
+        margin-right: 30px;
+
+    }
+
+    .contact .upper .sponsers .ebda3 {
+        width: 80%;
+    }
+
+    .contact .upper .sponsers .ebda3 img {
+
+        width: 20%;
+    }
+
+    .contact .upper .sponsers .ebda3 a {
+        margin-right: 95px;
+
+    }
+
+    .contact .copy-right {
+        height: 10%;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* =========================================================== */
+/* Max-Width = 600  */
+@media (max-width : 600px) {
+    .layout .logo {
+        width: 40%;
+    }
+
+    .layout .logo img {
+        width: 60%;
+    }
+
+    .layout .toggler {
+        padding-right: 20px;
+    }
+
+    .layout .toggler i {
+        margin-left: 20px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .container .alpha .start h1 {
+        font-size: 27px;
+    }
+
+    .container .alpha .start a {
+        font-size: 13px;
+    }
+
+    .info {
+        height: 900px;
+    }
+
+    .info .threedos .logo {
+        height: 350px;
+        margin-bottom: 85px;
+    }
+
+    .info .threedos .logo img {
+        width: 75%;
+        height: 390px;
+
+    }
+
+
+    .info .threedos .about {
+        width: 80%;
+        height: 300px;
+        margin: auto;
+    }
+
+    .info .threedos .about h4 {
+        font-size: 17px;
+    }
+
+    .contact {
+        height: 550px;
+    }
+
+    .contact .upper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 170px;
+    }
+
+    .contact .upper .address,
+    .contact .upper .links,
+    .contact .upper .sponsers {
+        margin-bottom: 5px;
+    }
+    .contact .upper .address{
+        text-align: center;
+    }
+    /* 
+
+    .contact .upper .links {
+        padding-left: 50px;
+    }
+
+    .contact .upper .sponsers {
+        padding-left: 50px;
+    } */
+
+    .contact .copy-right {
+        margin-right: 0px;
+    }
+
+
+}
+
+/* =========================================================================== */
+@media (max-width:340px) {
+
+    .layout {
+        width: 81%;
+        padding: 14px 40px;
+    }
+
+    .layout .toggler {
+        width: 15%;
+        padding-right: 0px;
+    }
+
+    .layout .logo {
+        width: 50%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container .alpha .start h1 {
+        font-size: 24px;
+    }
+
+    .container .alpha .start a {
+        font-size: 11px;
+    }
+
+    .info {
+        width: 100%;
+        height: 820px;
+    }
+
+    .info .words {
+        margin: 0px;
+    }
+
+    .info .threedos .logo {
+        height: 270px;
+        margin-bottom: 53px;
+    }
+
+
+    .info .threedos .logo img {
+        width: 90%;
+        height: 310px;
+    }
+
+    .info .threedos .about h4 {
+        font-size: 17px;
+    }
+
+    .contact {
+        width: 100%;
+        height: 610px;
+        justify-content: center;
+    }
+
+    .contact .upper {
+        margin-bottom: 140px;
+    }
+
+    .contact .upper .address {
+        margin-left: 0px;
+    }
+
+    .contact .upper .links {
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .contact .upper .links .icons a {
+        margin: 20px -16px;
+    }
+
+
+    .contact .upper .sponsers {
+        padding-left: 0px;
+    }
+
+    .contact .upper .sponsers .amit {
+        width: 100%;
+    }
+
+    .contact .upper .sponsers .ebda3 {
+        width: 100%;
+    }
+
+    .contact .copy-right {
+        margin-right: 24px;
+        margin-top: 65px;
+    }
+
+
+
+}
