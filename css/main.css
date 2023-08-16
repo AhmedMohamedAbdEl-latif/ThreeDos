@@ -829,8 +829,8 @@
     }
 
     .info .threedos .logo img {
-        width: 75%;
-        height: 390px;
+        width: 88%;
+        height:400px;
 
     }
 
@@ -861,17 +861,8 @@
         margin-bottom: 5px;
     }
     .contact .upper .address{
-        text-align: center;
+        margin: auto;
     }
-    /* 
-
-    .contact .upper .links {
-        padding-left: 50px;
-    }
-
-    .contact .upper .sponsers {
-        padding-left: 50px;
-    } */
 
     .contact .copy-right {
         margin-right: 0px;
@@ -881,7 +872,7 @@
 }
 
 /* =========================================================================== */
-@media (max-width:340px) {
+@media (max-width:370px) {
 
     .layout {
         width: 81%;
